@@ -24,7 +24,7 @@ layers:
   - I
   - O
   - P
-  - \
+  - BACKSPACE
   - BACKSPACE
   - {t: A, h: LCTRL}
   - {t: S, h: LEFT ALT}
