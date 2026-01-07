@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
@@ -422,18 +422,18 @@
         };
 
         game {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <4 5>;
             layers = <0>;
         };
 
         btctrl_l {
-            bindings = <&sl 3>;
+            bindings = <&sl 4>;
             key-positions = <3 2>;
         };
 
         btctrl_r {
-            bindings = <&sl 3>;
+            bindings = <&sl 4>;
             key-positions = <8 9>;
         };
 
@@ -528,66 +528,77 @@
         base {
             display-name = "base";
             bindings = <
-&kp F1       &kp F2       &kp F3  &kp F4            &kp F5           &kp F6                           &kp F7         &kp F8          &kp F9            &kp F10    &kp F11      &kp F12
-&kp Q        &kp W        &kp F   &kp P             &kp B            &none                            &none          &kp J           &kp L             &kp U      &kp Y        &as APOS
-&hml LGUI A  &hml LALT R  &kp S   &hll 1 T          &kp G            &none                            &none          &kp M           &hlr 2 N          &kp E      &hmr LALT R  &hmr RGUI O
-&kp Z        &kp X        &kp C   &kp D             &kp V            &none          &none      &none  &none          &kp K           &kp H             &as COMMA  &as DOT      &as FSLH
-&none        &none        &none   &mt LC(LALT) ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &none      &none  &mt RSHFT RET  &mt RCTRL BSPC  &mt RC(LALT) DEL  &none      &none        &none
+&kp F1       &kp F2       &kp F3  &kp F4            &kp F5           &kp F6                             &kp F7         &kp F8          &kp F9            &kp F10    &kp F11      &kp F12
+&kp Q        &kp W        &kp F   &kp P             &kp B            &none                              &none          &kp J           &kp L             &kp U      &kp Y        &as APOS
+&hml LGUI A  &hml LALT R  &kp S   &hll 2 T          &kp G            &none                              &none          &kp M           &hlr 3 N          &kp E      &hmr LALT I  &hmr RGUI O
+&kp Z        &kp X        &kp C   &kp D             &kp V            &none          &none        &none  &none          &kp K           &kp H             &as COMMA  &as DOT      &as FSLH
+&none        &none        &none   &mt LC(LALT) ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &none        &none  &mt RSHFT RET  &mt RCTRL BSPC  &mt RC(LALT) DEL  &none      &none        &none
+            >;
+        };
+
+        alt {
+            display-name = "alt";
+            bindings = <
+&kp F1       &kp F2       &kp F3  &kp F4            &kp F5           &kp F6                             &kp F7         &kp F8          &kp F9            &kp F10    &kp F11      &kp F12
+&kp Q        &kp W        &kp E   &kp R             &kp T            &none                              &none          &kp Y           &kp U             &kp I      &kp O        &kp P
+&hml LGUI A  &hml LALT S  &kp D   &hll 3 H          &kp G            &none                              &none          &kp H           &hlr 3 J          &kp K      &hmr LALT L  &hmr RGUI APOS
+&kp Z        &kp X        &kp C   &kp V             &kp B            &none          &none        &none  &none          &kp N           &kp M             &as COMMA  &as DOT      &as FSLH
+&none        &none        &none   &mt LC(LALT) ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &none        &none  &mt RSHFT RET  &mt RCTRL BSPC  &mt RC(LALT) DEL  &none      &none        &none
             >;
         };
 
         nav {
             display-name = "navigation";
             bindings = <
-&none  &none           &none            &none      &none  &none                                                  &none            &none          &none      &none      &none    &none
-&none  &none           &none            &as BSLH   &none  &none                                                  &kp PSCRN        &kp RC(PSCRN)  &none      &none      &none    &none
-&none  &hml LGUI SEMI  &hml LALT GRAVE  &kp COLON  &none  &none                                                  &kp LEFT         &kp DOWN       &kp UP     &kp RIGHT  &none    &none
-&none  &none           &none            &kp PIPE   &none  &none            &none                &none            &kp HOME         &kp PG_DN      &kp PG_UP  &kp END    &kp INS  &none
-&none  &none           &none            &none      &none  &mt LCTRL UNDER  &mt LSHFT MINUS      &mt RSHFT MINUS  &mt RCTRL UNDER  &none          &none      &none      &none    &none
+&none           &none            &none      &none  &none            &none                                &none            &none            &none          &none      &none      &none
+&none           &none            &kp BSLH   &none  &none            &none                                &none            &kp PSCRN        &kp RC(PSCRN)  &none      &none      &none
+&hml LGUI SEMI  &hml LALT GRAVE  &kp COLON  &none  &none            &none                                &none            &kp LEFT         &kp DOWN       &kp UP     &kp RIGHT  &none
+&none           &none            &kp PIPE   &none  &none            &none            &none        &none  &none            &kp HOME         &kp PG_DN      &kp PG_UP  &kp END    &kp INS
+&none           &none            &none      &none  &mt LCTRL UNDER  &mt LSHFT MINUS  &none        &none  &mt RSHFT MINUS  &mt RCTRL UNDER  &none          &none      &none      &none
             >;
         };
 
         num {
             display-name = "number";
             bindings = <
-&none  &none   &none     &none     &none      &none                                                  &none            &none  &none      &none            &none          &none
-&none  &none   &kp FSLH  &kp PLUS  &kp EQUAL  &none                                                  &none            &none  &as BSLH   &none            &none          &none
-&none  &as_1p  &as N2    &as N3    &as N4     &as N5                                                 &none            &none  &kp COLON  &hmr LALT GRAVE  &mt RGUI SEMI  &none
-&none  &as N6  &as N7    &as N8    &as_9g     &as_0b           &none                &none            &none            &none  &kp PIPE   &none            &none          &none
-&none  &none   &none     &none     &none      &mt LCTRL UNDER  &mt LSHFT MINUS      &mt RSHFT MINUS  &mt RCTRL UNDER  &none  &none      &none            &none          &none
+&none   &none     &none     &none      &none            &none                                &none            &none            &none  &none      &none           &none
+&none   &kp FSLH  &kp PLUS  &kp EQUAL  &none            &none                                &none            &none            &none  &kp BSLH   &none           &none
+&as_1p  &as N2    &as N3    &as N4     &as N5           &none                                &none            &none            &none  &kp COLON  &mt LALT GRAVE  &hmr RGUI SEMI
+&as N6  &as N7    &as N8    &as N9     &as_0b           &none            &none        &none  &none            &none            &none  &kp PIPE   &none           &none
+&none   &none     &none     &none      &mt LCTRL UNDER  &mt LSHFT MINUS  &none        &none  &mt RSHFT MINUS  &mt RCTRL UNDER  &none  &none      &none           &none
             >;
         };
 
         fun {
             display-name = "fun";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans        &trans        &trans        &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans        &trans        &trans        &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &bt BT_CLR    &bt BT_CLR_ALL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans        &trans        &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans        &trans        &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &trans        &trans        &bt BT_CLR    &bt BT_CLR_ALL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &trans        &trans        &trans        &trans          &trans
             >;
         };
 
         game_l {
             display-name = "game";
             bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3         &kp N4        &kp N5                                             &kp N6          &kp N7        &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp MINUS  &kp T     &kp Q     &kp W          &kp E         &kp R                                              &kp Y           &kp U         &kp I      &kp O     &kp P     &kp EQUAL
-&kp EQUAL  &kp G     &kp A     &kp S          &kp D         &kp F                                              &kp H           &kp J         &kp K      &kp L     &kp SEMI  &kp APOS
-&kp COMMA  &kp B     &kp Z     &kp X          &kp C         &kp V            &kp M              &kp RGUI       &kp N           &kp M         &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
-&kp DOT    &kp LBKT  &kp RBKT  &mt LGUI BSPC  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB      &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
+&kp GRAVE  &kp N1    &kp N2    &kp N3         &kp N4        &kp N5                                               &kp N6          &kp N7        &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp MINUS  &kp T     &kp Q     &kp W          &kp E         &kp R                                                &kp Y           &kp U         &kp I      &kp O     &kp P     &kp EQUAL
+&kp EQUAL  &kp G     &kp A     &kp S          &kp D         &kp F                                                &kp H           &kp J         &kp K      &kp L     &kp SEMI  &kp APOS
+&kp COMMA  &kp B     &kp Z     &kp X          &kp C         &kp V            &kp M                &kp RGUI       &kp N           &kp M         &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
+&kp DOT    &kp LBKT  &kp RBKT  &mt LGUI BSPC  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB        &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
         game_r {
             display-name = "emag";
             bindings = <
-&kp GRAVE  &kp N6     &kp N7   &kp N8         &kp N9        &kp N0                                        &kp N6     &kp N7   &kp N8         &kp N9        &kp N0           &kp GRAVE
-&kp MINUS  &kp Y      &kp U    &kp I          &kp O         &kp P                                         &kp Y      &kp U    &kp I          &kp O         &kp P            &kp MINUS
-&kp EQUAL  &kp H      &kp J    &kp K          &kp L         &kp SEMI                                      &kp H      &kp J    &kp K          &kp L         &kp SEMI         &kp EQUAL
-&kp LBKT   &kp N      &kp M    &kp COMMA      &kp DOT       &kp FSLH         &kp DEL            &kp LBKT  &kp N      &kp M    &kp COMMA      &kp DOT       &kp FSLH         &kp DEL
-&kp RBKT   &kp COMMA  &kp DOT  &mt LGUI BSPC  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB      &kp RBKT  &kp COMMA  &kp DOT  &mt LGUI BSPC  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB
+&kp GRAVE  &kp N6     &kp N7   &kp N8         &kp N9        &kp N0                                          &kp N6     &kp N7   &kp N8         &kp N9        &kp N0           &kp GRAVE
+&kp MINUS  &kp Y      &kp U    &kp I          &kp O         &kp P                                           &kp Y      &kp U    &kp I          &kp O         &kp P            &kp MINUS
+&kp EQUAL  &kp H      &kp J    &kp K          &kp L         &kp SEMI                                        &kp H      &kp J    &kp K          &kp L         &kp SEMI         &kp EQUAL
+&kp LBKT   &kp N      &kp M    &kp COMMA      &kp DOT       &kp FSLH         &kp DEL              &kp LBKT  &kp N      &kp M    &kp COMMA      &kp DOT       &kp FSLH         &kp DEL
+&kp RBKT   &kp COMMA  &kp DOT  &mt LGUI BSPC  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB        &kp RBKT  &kp COMMA  &kp DOT  &mt LGUI BSPC  &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB
             >;
         };
     };
