@@ -48,9 +48,9 @@ layers:
   - ''
   - K
   - H
-  - '&as COMMA'
-  - '&as DOT'
-  - '&as FSLH'
+  - '&as_cq'
+  - '&as_de'
+  - '&as_ft'
   - ''
   - ''
   - ''
@@ -113,9 +113,9 @@ layers:
   - ''
   - N
   - M
-  - '&as COMMA'
-  - '&as DOT'
-  - '&as FSLH'
+  - '&as_cq'
+  - '&as_de'
+  - '&as_ft'
   - ''
   - ''
   - ''
