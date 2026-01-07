@@ -53,16 +53,16 @@ layers:
   - '&as_ft'
   - ''
   - ''
-  - ''
   - {t: ESC, h: Ctl+LALT}
   - {t: SPACE, h: LCTRL}
   - {t: TAB, h: LSHFT}
   - ''
   - ''
+  - ''
+  - ''
   - {t: RET, h: RSHFT}
   - {t: BSPC, h: RCTRL}
   - {t: DEL, h: Ctl+LALT}
-  - ''
   - ''
   - ''
   alt:
@@ -118,16 +118,16 @@ layers:
   - '&as_ft'
   - ''
   - ''
-  - ''
   - {t: ESC, h: Ctl+LALT}
   - {t: SPACE, h: LCTRL}
   - {t: TAB, h: LSHFT}
   - ''
   - ''
+  - ''
+  - ''
   - {t: RET, h: RSHFT}
   - {t: BSPC, h: RCTRL}
   - {t: DEL, h: Ctl+LALT}
-  - ''
   - ''
   - ''
   navigation:
@@ -183,16 +183,16 @@ layers:
   - INS
   - ''
   - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
   - {t: _, h: LCTRL}
   - {t: '-', h: LSHFT}
   - ''
   - ''
+  - ''
+  - ''
   - {t: '-', h: RSHFT}
   - {t: _, h: RCTRL}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   number:
@@ -248,16 +248,16 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
   - {t: _, h: LCTRL}
   - {t: '-', h: LSHFT}
   - ''
   - ''
+  - ''
+  - ''
   - {t: '-', h: RSHFT}
   - {t: _, h: RCTRL}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   fun:
@@ -267,35 +267,35 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -339,11 +339,11 @@ layers:
   - '0'
   - '-'
   - '-'
-  - T
   - Q
   - W
   - E
   - R
+  - T
   - Y
   - U
   - I
@@ -351,11 +351,11 @@ layers:
   - P
   - '='
   - '='
-  - G
   - A
   - S
   - D
   - F
+  - G
   - H
   - J
   - K
@@ -363,12 +363,12 @@ layers:
   - ;
   - ''''
   - ','
-  - B
   - Z
   - X
   - C
   - V
-  - M
+  - B
+  - {t: emag, h: sticky}
   - RGUI
   - N
   - M
@@ -379,10 +379,10 @@ layers:
   - .
   - '['
   - ']'
-  - {t: BSPC, h: LGUI}
   - {t: ESC, h: LALT}
   - {t: SPACE, h: LCTRL}
   - {t: TAB, h: LSHFT}
+  - {t: BSPC, h: LGUI}
   - {t: RET, h: RSHFT}
   - {t: BSPC, h: RCTRL}
   - {t: DEL, h: LALT}
@@ -391,70 +391,70 @@ layers:
   - UP
   - RIGHT
   emag:
-  - '`'
+  - {t: ▽, type: trans}
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '`'
-  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Y
   - U
   - I
   - O
   - P
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '-'
-  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - H
   - J
   - K
   - L
   - ;
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - '='
-  - '['
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - N
   - M
   - ','
   - .
   - /
-  - DEL
-  - '['
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - DEL
-  - ']'
-  - ','
-  - .
-  - {t: BSPC, h: LGUI}
-  - {t: ESC, h: LALT}
-  - {t: SPACE, h: LCTRL}
-  - {t: TAB, h: LSHFT}
-  - ']'
-  - ','
-  - .
-  - {t: BSPC, h: LGUI}
-  - {t: ESC, h: LALT}
-  - {t: SPACE, h: LCTRL}
-  - {t: TAB, h: LSHFT}
+  - {t: game, h: toggle, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: {t: base, h: toggle}
