@@ -13,37 +13,36 @@ layers:
   - F10
   - F11
   - F12
+  - ''
   - Q
   - W
   - F
   - P
   - B
-  - ''
-  - ''
   - J
   - L
   - U
   - Y
   - '&as APOS'
+  - ''
+  - ''
   - {t: A, h: LGUI}
   - {t: R, h: LALT}
   - S
   - {t: T, h: navigation}
   - G
-  - ''
-  - ''
   - M
   - {t: N, h: number}
   - E
   - {t: I, h: LALT}
   - {t: O, h: RGUI}
+  - ''
+  - ''
   - Z
   - X
   - C
   - D
   - V
-  - ''
-  - ''
   - ''
   - ''
   - K
@@ -53,16 +52,17 @@ layers:
   - '&as_ft'
   - ''
   - ''
-  - {t: ESC, h: Ctl+LALT}
+  - ''
+  - ''
+  - ''
+  - {t: ESC, h: fun}
   - {t: SPACE, h: LCTRL}
   - {t: TAB, h: LSHFT}
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: RET, h: RSHFT}
   - {t: BSPC, h: RCTRL}
-  - {t: DEL, h: Ctl+LALT}
+  - {t: DEL, h: fun}
+  - ''
+  - ''
   - ''
   - ''
   alt:
@@ -78,37 +78,36 @@ layers:
   - F10
   - F11
   - F12
+  - ''
   - Q
   - W
   - E
   - R
   - T
-  - ''
-  - ''
   - Y
   - U
   - I
   - O
   - P
+  - ''
+  - ''
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - D
-  - {t: H, h: number}
+  - {t: F, h: navigation}
   - G
-  - ''
-  - ''
   - H
   - {t: J, h: number}
   - K
   - {t: L, h: LALT}
-  - {t: '''', h: RGUI}
+  - {t: ;, h: RGUI}
+  - ''
+  - ''
   - Z
   - X
   - C
   - V
   - B
-  - ''
-  - ''
   - ''
   - ''
   - N
@@ -118,16 +117,17 @@ layers:
   - '&as_ft'
   - ''
   - ''
-  - {t: ESC, h: Ctl+LALT}
+  - ''
+  - ''
+  - ''
+  - {t: ESC, h: fun}
   - {t: SPACE, h: LCTRL}
   - {t: TAB, h: LSHFT}
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: RET, h: RSHFT}
   - {t: BSPC, h: RCTRL}
-  - {t: DEL, h: Ctl+LALT}
+  - {t: DEL, h: fun}
+  - ''
+  - ''
   - ''
   - ''
   navigation:
@@ -145,35 +145,8 @@ layers:
   - ''
   - ''
   - ''
+  - ''
   - \
-  - ''
-  - ''
-  - ''
-  - ''
-  - PSCRN
-  - Ctl+PSCRN
-  - ''
-  - ''
-  - ''
-  - {t: ;, h: LGUI}
-  - {t: '`', h: LALT}
-  - ':'
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - ''
-  - ''
-  - ''
-  - '|'
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - HOME
@@ -183,19 +156,47 @@ layers:
   - INS
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - {t: ;, h: LGUI}
+  - {t: '`', h: LALT}
+  - ':'
+  - {type: held}
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '|'
+  - ''
+  - ''
+  - ''
+  - ''
+  - PSCRN
+  - Ctl+PSCRN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: _, h: LCTRL}
   - {t: '-', h: LSHFT}
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: '-', h: RSHFT}
   - {t: _, h: RCTRL}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   number:
+  - ''
   - ''
   - ''
   - ''
@@ -215,30 +216,28 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
   - \
   - ''
   - ''
-  - '&as_1p'
+  - ''
+  - ''
+  - '&as N1'
   - '&as N2'
   - '&as N3'
   - '&as N4'
   - '&as N5'
   - ''
-  - ''
-  - ''
   - {type: held}
   - ':'
   - {t: '`', h: LALT}
   - {t: ;, h: RGUI}
+  - ''
+  - ''
   - '&as N6'
   - '&as N7'
   - '&as N8'
-  - '&as N9'
+  - '&as_9g'
   - '&as_0b'
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -248,23 +247,24 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: _, h: LCTRL}
   - {t: '-', h: LSHFT}
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: '-', h: RSHFT}
   - {t: _, h: RCTRL}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   fun:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
@@ -285,24 +285,24 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -315,7 +315,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -327,11 +327,11 @@ layers:
   - {t: ▽, type: trans}
   game:
   - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - {t: '1', s: F1}
+  - {t: '2', s: F2}
+  - {t: '3', s: F3}
+  - {t: '4', s: F4}
+  - {t: '5', s: F5}
   - '6'
   - '7'
   - '8'
@@ -391,19 +391,19 @@ layers:
   - UP
   - RIGHT
   emag:
-  - {t: ▽, type: trans}
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F11
+  - {t: '6', s: F6}
+  - {t: '7', s: F7}
+  - {t: '8', s: F8}
+  - {t: '9', s: F9}
+  - {t: '0', s: F10}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F12
   - Y
   - U
   - I
@@ -415,7 +415,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F13
   - H
   - J
   - K
@@ -427,7 +427,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F14
   - N
   - M
   - ','
@@ -441,7 +441,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F15
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -468,39 +468,39 @@ combos:
 - p: [13, 14]
   k: '&qu'
   l: [base]
-- p: [13, 25]
+- p: [14, 26]
   k: '{'
   l: [base]
-- p: [14, 26]
+- p: [15, 27]
   k: '['
   l: [base]
-- p: [15, 27]
+- p: [16, 28]
   k: (
   l: [base]
-- p: [16, 28]
+- p: [17, 29]
   k: <
   l: [base]
-- p: [19, 31]
+- p: [18, 30]
   k: '>'
   l: [base]
-- p: [20, 32]
+- p: [19, 31]
   k: )
   l: [base]
-- p: [21, 33]
+- p: [20, 32]
   k: ']'
   l: [base]
-- p: [22, 34]
+- p: [21, 33]
   k: '}'
   l: [base]
-- p: [25, 27]
+- p: [28, 26]
   k: Gui+SPACE
-- p: [32, 34]
+- p: [31, 33]
   k: Gui+SPACE
+- p: [29, 41]
+  k: '|'
+- p: [30, 44]
+  k: '|'
 - p: [28, 40]
-  k: '|'
-- p: [31, 45]
-  k: '|'
-- p: [27, 39]
   k: \
-- p: [32, 46]
+- p: [31, 45]
   k: \
