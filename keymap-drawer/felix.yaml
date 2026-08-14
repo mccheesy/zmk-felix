@@ -1,31 +1,31 @@
 layout: {zmk_keyboard: felix}
 layers:
-  base:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - ''
+  colemak:
+  - '&as GRAVE'
+  - {t: '1', s: F1}
+  - {t: '2', s: F2}
+  - {t: '3', s: F3}
+  - {t: '4', s: F4}
+  - {t: '5', s: F5}
+  - {t: '6', s: F6}
+  - {t: '7', s: F7}
+  - {t: '8', s: F8}
+  - {t: '9', s: F9}
+  - {t: '0', s: F10}
+  - '&as MINUS'
+  - TAB
   - Q
   - W
-  - F
+  - {t: F, h: fun}
   - P
   - B
   - J
   - L
-  - U
+  - {t: U, h: fun}
   - Y
   - '&as APOS'
-  - ''
-  - ''
+  - BSPC
+  - {t: LCTRL, h: ESC}
   - {t: A, h: LGUI}
   - {t: R, h: LALT}
   - S
@@ -36,231 +36,165 @@ layers:
   - E
   - {t: I, h: LALT}
   - {t: O, h: RGUI}
-  - ''
-  - ''
+  - {t: RET, h: RCTRL}
+  - '&as EQUAL'
   - Z
   - X
   - C
   - D
   - V
-  - ''
-  - ''
+  - '&as GRAVE'
+  - '&as MINUS'
   - K
   - H
   - '&as_cq'
   - '&as_de'
   - '&as_ft'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ESC, h: fun}
-  - {t: SPACE, h: LCTRL}
-  - {t: TAB, h: LSHFT}
-  - {t: RET, h: RSHFT}
-  - {t: BSPC, h: RCTRL}
-  - {t: DEL, h: fun}
-  - ''
-  - ''
-  - ''
-  - ''
-  alt:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - ''
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - ''
-  - ''
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - D
-  - {t: F, h: navigation}
-  - G
-  - H
-  - {t: J, h: number}
-  - K
-  - {t: L, h: LALT}
-  - {t: ;, h: RGUI}
-  - ''
-  - ''
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - ''
-  - ''
-  - N
-  - M
-  - '&as_cq'
-  - '&as_de'
-  - '&as_ft'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ESC, h: fun}
-  - {t: SPACE, h: LCTRL}
-  - {t: TAB, h: LSHFT}
-  - {t: RET, h: RSHFT}
-  - {t: BSPC, h: RCTRL}
-  - {t: DEL, h: fun}
-  - ''
-  - ''
-  - ''
-  - ''
-  navigation:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - \
-  - ''
-  - ''
+  - '&as BSLH'
   - HOME
   - PG DN
->>>>>>> 40e98ed (keymap-drawer render)
   - PG UP
   - END
-  - INS
-  - ''
-  - ''
-  - {t: ;, h: LGUI}
-  - {t: '`', h: LALT}
-  - ':'
-  - {type: held}
-  - ''
+  - {t: ESC, h: LALT}
+  - {t: SPACE, h: LCTRL}
+  - {t: TAB, h: LSHFT}
+  - {t: RET, h: RSHFT}
+  - {t: BSPC, h: RCTRL}
+  - {t: DEL, h: LALT}
   - LEFT
   - DOWN
   - UP
   - RIGHT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  navigation:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '|'
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - INS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ;, h: LGUI}
+  - {t: '`', h: LALT}
+  - ':'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PSCRN
   - Ctl+PSCRN
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: _, h: LCTRL}
   - {t: '-', h: LSHFT}
   - {t: '-', h: RSHFT}
   - {t: _, h: RCTRL}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   number:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - /
   - +
   - '='
-  - ''
-  - ''
-  - ''
-  - \
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&as N1'
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&as_1p'
   - '&as N2'
   - '&as N3'
   - '&as N4'
   - '&as N5'
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
   - ':'
   - {t: '`', h: LALT}
   - {t: ;, h: RGUI}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&as N6'
   - '&as N7'
   - '&as N8'
   - '&as_9g'
   - '&as_0b'
-  - ''
-  - ''
-  - ''
-  - ''
-  - '|'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: _, h: LCTRL}
   - {t: '-', h: LSHFT}
   - {t: '-', h: RSHFT}
   - {t: _, h: RCTRL}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   fun:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -273,17 +207,18 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - BT CLR
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F11
+  - F12
+  - {t: F13, type: held}
+  - F14
+  - F15
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
@@ -291,32 +226,25 @@ layers:
   - F3
   - F4
   - F5
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F6
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F7
   - F8
   - F9
   - F10
-  - F11
-  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
-  - BT CLR ALL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -326,6 +254,77 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  qwerty:
+  - '&as GRAVE'
+  - {t: '1', s: F1}
+  - {t: '2', s: F2}
+  - {t: '3', s: F3}
+  - {t: '4', s: F4}
+  - {t: '5', s: F5}
+  - {t: '6', s: F6}
+  - {t: '7', s: F7}
+  - {t: '8', s: F8}
+  - {t: '9', s: F9}
+  - {t: '0', s: F10}
+  - '&as MINUS'
+  - TAB
+  - Q
+  - W
+  - {t: E, h: fun}
+  - R
+  - T
+  - Y
+  - U
+  - {t: I, h: fun}
+  - O
+  - P
+  - BSPC
+  - {t: LCTRL, h: ESC}
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - D
+  - {t: F, h: navigation}
+  - G
+  - H
+  - {t: J, h: number}
+  - K
+  - {t: L, h: LALT}
+  - {t: '''', h: RGUI}
+  - {t: RET, h: RCTRL}
+  - '&as EQUAL'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - '&as GRAVE'
+  - '&as MINUS'
+  - N
+  - M
+  - '&as_cq'
+  - '&as_de'
+  - '&as_ft'
+  - '&as BSLH'
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - {t: ESC, h: LALT}
+  - {t: SPACE, h: LCTRL}
+  - {t: TAB, h: LSHFT}
+  - {t: RET, h: RSHFT}
+  - {t: BSPC, h: RCTRL}
+  - {t: DEL, h: LALT}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   game:
   - '`'
   - {t: '1', s: F1}
@@ -333,11 +332,11 @@ layers:
   - {t: '3', s: F3}
   - {t: '4', s: F4}
   - {t: '5', s: F5}
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - {t: '6', s: F6}
+  - {t: '7', s: F7}
+  - {t: '8', s: F8}
+  - {t: '9', s: F9}
+  - {t: '0', s: F10}
   - '-'
   - '-'
   - Q
@@ -369,7 +368,7 @@ layers:
   - C
   - V
   - B
-  - {t: emag, h: sticky}
+  - {t: emag, h: toggle}
   - RGUI
   - N
   - M
@@ -434,7 +433,7 @@ layers:
   - ','
   - .
   - /
-  - {t: game, h: toggle, type: held}
+  - {t: game, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -457,51 +456,59 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1]
-  k: {t: base, h: toggle}
-- p: [4, 5]
-  k: {t: game, h: toggle}
-  l: [base]
-- p: [3, 2]
-  k: {t: fun, h: sticky}
-- p: [8, 9]
-  k: {t: fun, h: sticky}
-- p: [13, 14]
-  k: '&qu'
-  l: [base]
 - p: [14, 26]
   k: '{'
-  l: [base]
+  l: [colemak]
 - p: [15, 27]
   k: '['
-  l: [base]
+  l: [colemak]
 - p: [16, 28]
   k: (
-  l: [base]
+  l: [colemak]
 - p: [17, 29]
   k: <
-  l: [base]
+  l: [colemak]
 - p: [18, 30]
   k: '>'
-  l: [base]
+  l: [colemak]
 - p: [19, 31]
   k: )
-  l: [base]
+  l: [colemak]
 - p: [20, 32]
   k: ']'
-  l: [base]
+  l: [colemak]
 - p: [21, 33]
   k: '}'
-  l: [base]
+  l: [colemak]
 - p: [28, 26]
   k: Gui+SPACE
+- p: [25, 37]
+  k: '&qu'
+- p: [26, 38]
+  k: '&in'
+- p: [27, 39]
+  k: '&the'
+- p: [28, 40]
+  k: BSPC
+- p: [29, 41]
+  k: DEL
 - p: [31, 33]
   k: Gui+SPACE
-- p: [29, 41]
-  k: '|'
 - p: [30, 44]
-  k: '|'
-- p: [28, 40]
-  k: \
+  k: '&qu'
 - p: [31, 45]
-  k: \
+  k: '&in'
+- p: [32, 46]
+  k: '&the'
+- p: [33, 47]
+  k: BSPC
+- p: [34, 48]
+  k: DEL
+- p: [0, 1]
+  k: {t: colemak, h: toggle}
+- p: [1, 2]
+  k: {t: qwerty, h: toggle}
+  l: [colemak]
+- p: [4, 5]
+  k: {t: game, h: toggle}
+  l: [colemak]
