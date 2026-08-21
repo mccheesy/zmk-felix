@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: felix}
 layers:
   colemak:
-  - '&as GRAVE'
+  - {t: '`', h: '&sh TILDE'}
   - {t: '1', s: F1}
   - {t: '2', s: F2}
   - {t: '3', s: F3}
@@ -12,7 +12,7 @@ layers:
   - {t: '8', s: F8}
   - {t: '9', s: F9}
   - {t: '0', s: F10}
-  - '&as MINUS'
+  - {t: _, h: '&sh MINUS'}
   - TAB
   - Q
   - W
@@ -23,7 +23,7 @@ layers:
   - L
   - {t: U, h: fun}
   - Y
-  - '&as APOS'
+  - {t: '''', h: '&sh DOT'}
   - BSPC
   - {t: LCTRL, h: ESC}
   - {t: A, h: LGUI}
@@ -37,7 +37,7 @@ layers:
   - {t: I, h: LALT}
   - {t: O, h: RGUI}
   - {t: RET, h: RCTRL}
-  - '&as EQUAL'
+  - {t: '=', h: '&sh PLUS'}
   - Z
   - X
   - C
@@ -47,10 +47,10 @@ layers:
   - {t: number, h: toggle}
   - K
   - H
-  - '&as_cq'
-  - '&as_de'
-  - '&as_ft'
-  - '&as BSLH'
+  - {t: ',', h: '&sh QMARK'}
+  - {t: ., h: '&sh EXCL'}
+  - {t: /, h: '&sh TILDE'}
+  - {t: \, h: '&sh PIPE'}
   - HOME
   - PG DN
   - PG UP
@@ -144,11 +144,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&as GRAVE'
-  - '&as FSLH'
-  - '&as PLUS'
-  - '&as EQUAL'
-  - '&as PIPE'
+  - {t: '`', h: '&sh TILDE'}
+  - {t: /, h: '&sh QMARK'}
+  - {t: +, h: '&sh EQUAL'}
+  - {t: '=', h: '&sh PLUS'}
+  - {t: '|', h: '&sh BSLH'}
   - {t: qwerty, h: toggle}
   - {t: ▽, type: trans}
   - '|'
@@ -156,11 +156,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&as_1p'
-  - '&as N2'
-  - '&as N3'
-  - '&as N4'
-  - '&as N5'
+  - {t: '1', h: '&sh PIPE'}
+  - {t: '2', h: '&sh AT'}
+  - {t: '3', h: '&sh HASH'}
+  - {t: '4', h: '&sh DLLR'}
+  - {t: '5', h: '&sh PRCNT'}
   - {t: game, h: toggle}
   - {type: held}
   - ':'
@@ -168,11 +168,11 @@ layers:
   - {t: ;, h: RGUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&as N6'
-  - '&as N7'
-  - '&as N8'
-  - '&as_9g'
-  - '&as_0b'
+  - {t: '6', h: '&sh CARET'}
+  - {t: '7', h: '&sh AMPS'}
+  - {t: '8', h: '&sh STAR'}
+  - {t: '9', h: '&sh GRAVE'}
+  - {t: '0', h: '&sh PIPE'}
   - {t: colemak, h: toggle}
   - {t: colemak, h: toggle}
   - {t: ▽, type: trans}
@@ -261,7 +261,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   qwerty:
-  - '&as GRAVE'
+  - {t: '`', h: '&sh TILDE'}
   - {t: '1', s: F1}
   - {t: '2', s: F2}
   - {t: '3', s: F3}
@@ -272,7 +272,7 @@ layers:
   - {t: '8', s: F8}
   - {t: '9', s: F9}
   - {t: '0', s: F10}
-  - '&as MINUS'
+  - {t: '-', h: '&sh UNDER'}
   - TAB
   - Q
   - W
@@ -283,9 +283,9 @@ layers:
   - U
   - {t: I, h: fun}
   - O
-  - P
+  - {t: '''', h: '&sh DQT'}
   - BSPC
-  - {t: LCTRL, h: ESC}
+  - {t: ESC, h: '&sh LCTRL'}
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - D
@@ -295,8 +295,8 @@ layers:
   - {t: J, h: number}
   - K
   - {t: L, h: LALT}
-  - {t: '''', h: RGUI}
-  - {t: RET, h: RCTRL}
+  - {t: P, h: RGUI}
+  - {t: ;, h: '&sh COLON'}
   - {t: LSHFT, h: sticky}
   - Z
   - X
@@ -307,10 +307,10 @@ layers:
   - {t: number, h: toggle}
   - N
   - M
-  - '&as_cq'
-  - '&as_de'
-  - '&as_ft'
-  - '&as BSLH'
+  - {t: ',', h: '&sh QMARK'}
+  - {t: ., h: '&sh EXCL'}
+  - {t: /, h: '&sh TILDE'}
+  - {t: \, h: '&sh PIPE'}
   - HOME
   - PG DN
   - PG UP
@@ -348,7 +348,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: '''', h: '&sh DQT'}
   - PG DN
   - '='
   - A
@@ -360,8 +360,8 @@ layers:
   - J
   - K
   - L
-  - '&as_cs'
-  - '&as APOS'
+  - P
+  - {t: ;, h: '&sh COLON'}
   - ','
   - Z
   - X
@@ -372,10 +372,10 @@ layers:
   - {t: emag, h: toggle}
   - N
   - M
-  - '&as_cq'
-  - '&as_de'
-  - '&as_ft'
-  - '&as BSLH'
+  - {t: ',', h: '&sh QMARK'}
+  - {t: ., h: '&sh EXCL'}
+  - {t: /, h: '&sh TILDE'}
+  - {t: \, h: '&sh PIPE'}
   - .
   - '['
   - ']'
@@ -408,7 +408,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: '''', h: '&sh DQT'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -420,7 +420,7 @@ layers:
   - J
   - K
   - L
-  - '&as_cs'
+  - P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -430,9 +430,9 @@ layers:
   - F14
   - N
   - M
-  - '&as_cq'
-  - '&as_de'
-  - '&as_ft'
+  - {t: ',', h: '&sh QMARK'}
+  - {t: ., h: '&sh EXCL'}
+  - {t: /, h: '&sh TILDE'}
   - {t: game, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -484,15 +484,15 @@ combos:
   k: Gui+SPACE
 - p: [31, 33]
   k: Gui+SPACE
-- p: [0, 1]
+- p: [0, 1, 2]
   k: {t: colemak, h: toggle}
-- p: [1, 2]
+- p: [1, 2, 3]
   k: {t: qwerty, h: toggle}
   l: [colemak]
-- p: [2, 3]
+- p: [2, 3, 4]
   k: {t: fun, h: sticky}
   l: [colemak]
-- p: [3, 4]
+- p: [3, 4, 5]
   k: {t: game, h: toggle}
 - p: [9, 11, 10]
   k: BT CLR ALL
