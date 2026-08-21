@@ -43,8 +43,8 @@ layers:
   - C
   - D
   - V
-  - '&as GRAVE'
-  - '&as MINUS'
+  - {t: navigation, h: toggle}
+  - {t: number, h: toggle}
   - K
   - H
   - '&as_cq'
@@ -83,7 +83,7 @@ layers:
   - {t: ▽, type: trans}
   - '|'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: qwerty, h: toggle}
   - HOME
   - PG DN
   - PG UP
@@ -95,7 +95,7 @@ layers:
   - {t: '`', h: LALT}
   - ':'
   - {type: held}
-  - {t: ▽, type: trans}
+  - {t: game, h: toggle}
   - LEFT
   - DOWN
   - UP
@@ -108,8 +108,8 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: colemak, h: toggle}
+  - {t: colemak, h: toggle}
   - PSCRN
   - Ctl+PSCRN
   - {t: ▽, type: trans}
@@ -144,12 +144,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - /
-  - +
-  - '='
-  - '|'
-  - {t: ▽, type: trans}
+  - '&as GRAVE'
+  - '&as FSLH'
+  - '&as PLUS'
+  - '&as EQUAL'
+  - '&as PIPE'
+  - {t: qwerty, h: toggle}
   - {t: ▽, type: trans}
   - '|'
   - {t: ▽, type: trans}
@@ -161,7 +161,7 @@ layers:
   - '&as N3'
   - '&as N4'
   - '&as N5'
-  - {t: ▽, type: trans}
+  - {t: game, h: toggle}
   - {type: held}
   - ':'
   - {t: '`', h: LALT}
@@ -173,8 +173,8 @@ layers:
   - '&as N8'
   - '&as_9g'
   - '&as_0b'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: colemak, h: toggle}
+  - {t: colemak, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - \
@@ -207,7 +207,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - BT CLR
+  - {t: BT CLR, h: BT CLR ALL}
   - {t: ▽, type: trans}
   - F11
   - F12
@@ -297,14 +297,14 @@ layers:
   - {t: L, h: LALT}
   - {t: '''', h: RGUI}
   - {t: RET, h: RCTRL}
-  - '&as EQUAL'
+  - {t: LSHFT, h: sticky}
   - Z
   - X
   - C
   - V
   - B
-  - '&as GRAVE'
-  - '&as MINUS'
+  - {t: navigation, h: toggle}
+  - {t: number, h: toggle}
   - N
   - M
   - '&as_cq'
@@ -337,7 +337,7 @@ layers:
   - {t: '8', s: F8}
   - {t: '9', s: F9}
   - {t: '0', s: F10}
-  - '-'
+  - PG UP
   - '-'
   - Q
   - W
@@ -349,7 +349,7 @@ layers:
   - I
   - O
   - P
-  - '='
+  - PG DN
   - '='
   - A
   - S
@@ -360,8 +360,8 @@ layers:
   - J
   - K
   - L
-  - ;
-  - ''''
+  - '&as_cs'
+  - '&as APOS'
   - ','
   - Z
   - X
@@ -369,13 +369,13 @@ layers:
   - V
   - B
   - {t: emag, h: toggle}
-  - RGUI
+  - {t: emag, h: toggle}
   - N
   - M
-  - ','
-  - .
-  - /
-  - \
+  - '&as_cq'
+  - '&as_de'
+  - '&as_ft'
+  - '&as BSLH'
   - .
   - '['
   - ']'
@@ -420,7 +420,7 @@ layers:
   - J
   - K
   - L
-  - ;
+  - '&as_cs'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -430,9 +430,9 @@ layers:
   - F14
   - N
   - M
-  - ','
-  - .
-  - /
+  - '&as_cq'
+  - '&as_de'
+  - '&as_ft'
   - {t: game, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -442,8 +442,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F15
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: navigation, h: toggle}
+  - {t: number, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -482,33 +482,15 @@ combos:
   l: [colemak]
 - p: [28, 26]
   k: Gui+SPACE
-- p: [25, 37]
-  k: '&qu'
-- p: [26, 38]
-  k: '&in'
-- p: [27, 39]
-  k: '&the'
-- p: [28, 40]
-  k: BSPC
-- p: [29, 41]
-  k: DEL
 - p: [31, 33]
   k: Gui+SPACE
-- p: [30, 44]
-  k: '&qu'
-- p: [31, 45]
-  k: '&in'
-- p: [32, 46]
-  k: '&the'
-- p: [33, 47]
-  k: BSPC
-- p: [34, 48]
-  k: DEL
 - p: [0, 1]
   k: {t: colemak, h: toggle}
 - p: [1, 2]
   k: {t: qwerty, h: toggle}
   l: [colemak]
-- p: [4, 5]
-  k: {t: game, h: toggle}
+- p: [2, 3]
+  k: {t: fun, h: sticky}
   l: [colemak]
+- p: [3, 4]
+  k: {t: game, h: toggle}
