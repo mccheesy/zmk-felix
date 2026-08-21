@@ -51,7 +51,7 @@
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 16 24 25 26 27 28 29 36 37 38 39 40 41 42 43 50 51 52 53 54 55 56>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 16 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54 55 56 17>;
         };
 
         hll: home_row_layer_tap_left {
@@ -77,194 +77,14 @@
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 16 24 25 26 27 28 29 36 37 38 39 40 41 42 43 50 51 52 53 54 55 56>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 16 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54 55 56 17>;
         };
 
-        mm_cq: mod_morph_cmma_qmark {
-            display-name = "Comma-Question Mark";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp QMARK>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mm_cs: mod_morph_colon_semi {
-            display-name = "Colon-Semi";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp SEMI>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mm_de: mod_morph_dot_excl {
-            display-name = "Period-Exclamation Mark";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp EXCL>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mm_ft: mod_morph_fslh_tild {
-            display-name = "Forward Slash-Tilde";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp TILDE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mm_1p: mod_morph_n1_pipe {
-            display-name = "N1-Pipe";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N1>, <&kp PIPE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mm_9g: mod_morph_n9_grave {
-            display-name = "N9-Grave";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N9>, <&kp GRAVE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mm_0b: mod_morph_n0_bslh {
-            display-name = "N0-Back Slash";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N0>, <&kp BSLH>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mm_ll: mod_morph_lpar_lt {
-            display-name = "Left Parentheses-Less Than";
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp LPAR>, <&kp LT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mm_rg: mod_morph_rpar_gt {
-            display-name = "Right Parentheses-Greater Than";
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp RPAR>, <&kp GT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        ht_as: hold_tap_autoshift {
+        as: hold_tap_autoshift {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&sh>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_cq: hold_tap_cmma_qmark {
-            display-name = "Comma-Question Mark (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_cq>;
-
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_cs: hold_tap_colon_semi {
-            display-name = "Colon-Semi (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_cs>;
-
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_de: hold_tap_dot_excl {
-            display-name = "Period-Exclamation Mark (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_de>;
-
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_ft: hold_tap_fslh_tild {
-            display-name = "Forward Slash-Tilde (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_ft>;
-
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_1p: hold_tap_n1_pipe {
-            display-name = "N1-Pipe (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_1p>;
-
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_9g: hold_tap_n9_grave {
-            display-name = "N9-Grave (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_9g>;
-
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_0b: hold_tap_n0_bslh {
-            display-name = "N0-Back Slash (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_0b>;
-
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_ll: hold_tap_lpar_lt {
-            display-name = "Left Parentheses-Less Than (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_ll>;
-
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        ht_rg: hold_tap_rpar_gt {
-            display-name = "Right Parentheses-Greater Than (Hold-Tap)";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&mm_rg>;
-
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
@@ -352,18 +172,6 @@
     };
 
     macros {
-        as: autoshift {
-            display-name = "Autoshift";
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &macro_param_1to2 &ht_as MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &macro_param_1to2 &ht_as MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-        };
-
         sh: shifted_keypress {
             display-name = "Shifted Keypress";
             compatible = "zmk,behavior-macro-one-param";
@@ -374,114 +182,6 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LSHFT>;
-        };
-
-        as_cq: autoshift_cmma_qmark {
-            display-name = "Comma-Question Mark (Autoshift)";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_cq QMARK 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_cq QMARK 0>;
-        };
-
-        as_cs: autoshift_colon_semi {
-            display-name = "Colon-Semi (Autoshift)";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_cs SEMI 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_cs SEMI 0>;
-        };
-
-        as_de: autoshift_dot_excl {
-            display-name = "Period-Exclamation Mark (Autoshift)";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_de EXCL 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_de EXCL 0>;
-        };
-
-        as_ft: autoshift_fslh_tild {
-            display-name = "Forward Slash-Tilde (Autoshift)";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_ft TILDE 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_ft TILDE 0>;
-        };
-
-        as_1p: autoshift_n1_pipe {
-            display-name = "N1-Pipe (Autoshift)";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_1p PIPE 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_1p PIPE 0>;
-        };
-
-        as_9g: autoshift_n9_grave {
-            display-name = "N9-Grave (Autoshift)";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_9g GRAVE 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_9g GRAVE 0>;
-        };
-
-        as_0b: autoshift_n0_bslh {
-            display-name = "N0-Back Slash (Autoshift)";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_0b BSLH 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_0b BSLH 0>;
-        };
-
-        as_ll: as_ll {
-            compatible = "zmk,behavior-macro";
-            display-name = "Left Parentheses-Lest Than (Autoshift)";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_ll LT 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_ll LT 0>;
-        };
-
-        as_rg: autoshift_rpar_gt {
-            compatible = "zmk,behavior-macro";
-            display-name = "Right Parentheses-Greater Than (Autoshift)";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&ht_rg GT 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&ht_rg GT 0>;
         };
     };
 
@@ -548,24 +248,24 @@
 
         colemak {
             bindings = <&to 0>;
-            key-positions = <0 1>;
+            key-positions = <0 1 2>;
         };
 
         qwerty {
             bindings = <&to 4>;
-            key-positions = <1 2>;
+            key-positions = <1 2 3>;
             layers = <0>;
         };
 
         fun {
             bindings = <&sl 3>;
-            key-positions = <2 3>;
+            key-positions = <2 3 4>;
             layers = <0>;
         };
 
         game {
             bindings = <&to 5>;
-            key-positions = <3 4>;
+            key-positions = <3 4 5>;
         };
 
         bt_clr_all {
@@ -581,11 +281,11 @@
         cmak {
             display-name = "colemak";
             bindings = <
-&as GRAVE       &mm_altF1    &mm_altF2    &mm_altF3  &mm_altF4     &mm_altF5                                            &mm_altF6       &mm_altF7     &mm_altF8  &mm_altF9    &mm_altF10   &as MINUS
-&kp TAB         &kp Q        &kp W        &lt 3 F    &kp P         &kp B                                                &kp J           &kp L         &lt 3 U    &kp Y        &as APOS     &kp BSPC
-&hml ESC LCTRL  &hml LGUI A  &hml LALT R  &kp S      &hll 1 T      &kp G                                                &kp M           &hlr 2 N      &kp E      &hmr LALT I  &hmr RGUI O  &hmr RCTRL RET
-&as EQUAL       &kp Z        &kp X        &kp C      &kp D         &kp V            &to 1                &to 2          &kp K           &kp H         &as_cq     &as_de       &as_ft       &as BSLH
-&kp HOME        &kp PG_DN    &kp PG_UP    &kp END    &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB        &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT
+&as TILDE GRAVE  &mm_altF1    &mm_altF2    &mm_altF3  &mm_altF4     &mm_altF5                                            &mm_altF6       &mm_altF7     &mm_altF8        &mm_altF9     &mm_altF10      &as MINUS UNDER
+&kp TAB          &kp Q        &kp W        &lt 3 F    &kp P         &kp B                                                &kp J           &kp L         &lt 3 U          &kp Y         &as DOT SQT     &kp BSPC
+&hml ESC LCTRL   &hml LGUI A  &hml LALT R  &kp S      &hll 1 T      &kp G                                                &kp M           &hlr 2 N      &kp E            &hmr LALT I   &hmr RGUI O     &hmr RCTRL RET
+&as PLUS EQUAL   &kp Z        &kp X        &kp C      &kp D         &kp V            &to 1                &to 2          &kp K           &kp H         &as QMARK COMMA  &as EXCL DOT  &as TILDE FSLH  &as PIPE BSLH
+&kp HOME         &kp PG_DN    &kp PG_UP    &kp END    &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB        &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &kp LEFT         &kp DOWN      &kp UP          &kp RIGHT
             >;
         };
 
@@ -603,11 +303,11 @@
         num {
             display-name = "number";
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans                                                   &trans           &trans  &trans     &trans           &trans          &trans
-&trans  &as GRAVE  &as FSLH  &as PLUS  &as EQUAL  &as PIPE                                                 &to 4            &trans  &kp PIPE   &trans           &trans          &trans
-&trans  &as_1p     &as N2    &as N3    &as N4     &as N5                                                   &to 5            &trans  &kp COLON  &hmr LALT GRAVE  &hmr RGUI SEMI  &trans
-&trans  &as N6     &as N7    &as N8    &as_9g     &as_0b           &to 0                  &to 0            &trans           &trans  &kp BSLH   &trans           &trans          &trans
-&trans  &trans     &trans    &trans    &trans     &mt LCTRL UNDER  &mt LSHFT MINUS        &mt RSHFT MINUS  &mt RCTRL UNDER  &trans  &trans     &trans           &trans          &trans
+&trans  &trans           &trans          &trans          &trans          &trans                                                   &trans           &trans  &trans     &trans           &trans          &trans
+&trans  &as TILDE GRAVE  &as QMARK FSLH  &as EQUAL PLUS  &as PLUS EQUAL  &as BSLH PIPE                                            &to 4            &trans  &kp PIPE   &trans           &trans          &trans
+&trans  &as PIPE N1      &as AT N2       &as HASH N3     &as DLLR N4     &as PRCNT N5                                             &to 5            &trans  &kp COLON  &hmr LALT GRAVE  &hmr RGUI SEMI  &trans
+&trans  &as CARET N6     &as AMPS N7     &as STAR N8     &as GRAVE N9    &as PIPE N0      &to 0                  &to 0            &trans           &trans  &kp BSLH   &trans           &trans          &trans
+&trans  &trans           &trans          &trans          &trans          &mt LCTRL UNDER  &mt LSHFT MINUS        &mt RSHFT MINUS  &mt RCTRL UNDER  &trans  &trans     &trans           &trans          &trans
             >;
         };
 
@@ -625,33 +325,33 @@
         qwty {
             display-name = "qwerty";
             bindings = <
-&as GRAVE       &mm_altF1    &mm_altF2    &mm_altF3  &mm_altF4     &mm_altF5                                            &mm_altF6       &mm_altF7     &mm_altF8  &mm_altF9    &mm_altF10      &as MINUS
-&kp TAB         &kp Q        &kp W        &lt 3 E    &kp R         &kp T                                                &kp Y           &kp U         &lt 3 I    &kp O        &kp P           &kp BSPC
-&hml ESC LCTRL  &hml LGUI A  &hml LALT S  &kp D      &hll 1 F      &kp G                                                &kp H           &hlr 2 J      &kp K      &hmr LALT L  &hmr RGUI APOS  &hmr RCTRL RET
-&sk LSHFT       &kp Z        &kp X        &kp C      &kp V         &kp B            &tog 1               &to 2          &kp N           &kp M         &as_cq     &as_de       &as_ft          &as BSLH
-&kp HOME        &kp PG_DN    &kp PG_UP    &kp END    &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB        &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &kp LEFT   &kp DOWN     &kp UP          &kp RIGHT
+&as TILDE GRAVE  &mm_altF1    &mm_altF2    &mm_altF3  &mm_altF4     &mm_altF5                                            &mm_altF6       &mm_altF7     &mm_altF8        &mm_altF9     &mm_altF10      &as UNDER MINUS
+&kp TAB          &kp Q        &kp W        &lt 3 E    &kp R         &kp T                                                &kp Y           &kp U         &lt 3 I          &kp O         &as DQT SQT     &kp BSPC
+&as LCTRL ESC    &hml LGUI A  &hml LALT S  &kp D      &hll 1 F      &kp G                                                &kp H           &hlr 2 J      &kp K            &hmr LALT L   &hmr RGUI P     &as COLON SEMI
+&sk LSHFT        &kp Z        &kp X        &kp C      &kp V         &kp B            &tog 1               &to 2          &kp N           &kp M         &as QMARK COMMA  &as EXCL DOT  &as TILDE FSLH  &as PIPE BSLH
+&kp HOME         &kp PG_DN    &kp PG_UP    &kp END    &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB        &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &kp LEFT         &kp DOWN      &kp UP          &kp RIGHT
             >;
         };
 
         game {
             display-name = "game";
             bindings = <
-&kp GRAVE  &mm_altF1  &mm_altF2  &mm_altF3     &mm_altF4        &mm_altF5                                          &mm_altF6       &mm_altF7     &mm_altF8  &mm_altF9  &mm_altF10  &kp PG_UP
-&kp MINUS  &kp Q      &kp W      &kp E         &kp R            &kp T                                              &kp Y           &kp U         &kp I      &kp O      &kp P       &kp PG_DN
-&kp EQUAL  &kp A      &kp S      &kp D         &kp F            &kp G                                              &kp H           &kp J         &kp K      &kp L      &as_cs      &as APOS
-&kp COMMA  &kp Z      &kp X      &kp C         &kp V            &kp B          &to 6                &to 6          &kp N           &kp M         &as_cq     &as_de     &as_ft      &as BSLH
-&kp DOT    &kp LBKT   &kp RBKT   &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &mt LGUI BSPC        &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT
+&kp GRAVE  &mm_altF1  &mm_altF2  &mm_altF3     &mm_altF4        &mm_altF5                                          &mm_altF6       &mm_altF7     &mm_altF8        &mm_altF9     &mm_altF10      &kp PG_UP
+&kp MINUS  &kp Q      &kp W      &kp E         &kp R            &kp T                                              &kp Y           &kp U         &kp I            &kp O         &as DQT SQT     &kp PG_DN
+&kp EQUAL  &kp A      &kp S      &kp D         &kp F            &kp G                                              &kp H           &kp J         &kp K            &kp L         &kp P           &as COLON SEMI
+&kp COMMA  &kp Z      &kp X      &kp C         &kp V            &kp B          &to 6                &to 6          &kp N           &kp M         &as QMARK COMMA  &as EXCL DOT  &as TILDE FSLH  &as PIPE BSLH
+&kp DOT    &kp LBKT   &kp RBKT   &mt LALT ESC  &mt LCTRL SPACE  &mt LSHFT TAB  &mt LGUI BSPC        &mt RSHFT RET  &mt RCTRL BSPC  &mt LALT DEL  &kp LEFT         &kp DOWN      &kp UP          &kp RIGHT
             >;
         };
 
         emag {
             display-name = "emag";
             bindings = <
-&kp F11  &mm_altF6  &mm_altF7  &mm_altF8  &mm_altF9  &mm_altF10                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp F12  &kp Y      &kp U      &kp I      &kp O      &kp P                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp F13  &kp H      &kp J      &kp K      &kp L      &as_cs                            &trans  &trans  &trans  &trans  &trans  &trans
-&kp F14  &kp N      &kp M      &as_cq     &as_de     &as_ft      &to 5         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp F15  &to 1      &to 2      &trans     &trans     &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F11  &mm_altF6  &mm_altF7  &mm_altF8        &mm_altF9     &mm_altF10                            &trans  &trans  &trans  &trans  &trans  &trans
+&kp F12  &kp Y      &kp U      &kp I            &kp O         &as DQT SQT                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp F13  &kp H      &kp J      &kp K            &kp L         &kp P                                 &trans  &trans  &trans  &trans  &trans  &trans
+&kp F14  &kp N      &kp M      &as QMARK COMMA  &as EXCL DOT  &as TILDE FSLH  &to 5         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F15  &to 1      &to 2      &trans           &trans        &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
