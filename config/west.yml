@@ -2,15 +2,30 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+
+    - name: mccheesy
+      url-base: https://github.com/mccheesy
+
+    - name: urob
+      url-base: https://github.com/urob
+
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.2
-      import: app/west.yml
-    - name: zmk-nice-oled
-      remote: mctechnology17
       revision: main
+      import: app/west.yml
+
+    - name: zmk-keyboard-felix
+      remote: mccheesy
+      revision: main
+
+    - name: zmk-helpers
+      remote: urob
+      revision: main
+
+    - name: zmk-tri-state
+      remote: urob
+      revision: main
+
   self:
     path: config
