@@ -349,17 +349,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-
-        btclr_ht: btclr_ht {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&bt>, <&bt>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "tap-preferred";
-        };
     };
 
     macros {
@@ -599,6 +588,12 @@
             bindings = <&to 5>;
             key-positions = <3 4>;
         };
+
+        bt_clr_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <9 11 10>;
+            layers = <3>;
+        };
     };
 
     keymap {
@@ -640,7 +635,7 @@
         fun {
             display-name = "fun";
             bindings = <
-&trans  &trans   &trans   &trans   &trans   &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &btclr_ht BT_CLR_ALL BT_CLR
+&trans  &trans   &trans   &trans   &trans   &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                        &kp F11       &kp F12       &kp F13       &kp F14       &kp F15       &trans
 &trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &trans
 &trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans        &trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
