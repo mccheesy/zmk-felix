@@ -483,27 +483,6 @@
                 <&macro_release>,
                 <&ht_rg GT 0>;
         };
-
-        the: the {
-            display-name = "the";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E>;
-        };
-
-        qu: qu {
-            display-name = "qu";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Q &kp U>;
-        };
-
-        in: in {
-            display-name = "in";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp N>;
-        };
     };
 
     combos {
@@ -665,7 +644,7 @@
             >;
         };
 
-        game_r {
+        emag {
             display-name = "emag";
             bindings = <
 &kp F11  &mm_altF6  &mm_altF7  &mm_altF8  &mm_altF9  &mm_altF10                        &trans  &trans  &trans  &trans  &trans  &trans
