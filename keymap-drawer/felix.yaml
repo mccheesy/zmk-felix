@@ -207,7 +207,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: BT CLR, h: BT CLR ALL}
+  - BT CLR
   - {t: ▽, type: trans}
   - F11
   - F12
@@ -494,3 +494,6 @@ combos:
   l: [colemak]
 - p: [3, 4]
   k: {t: game, h: toggle}
+- p: [9, 11, 10]
+  k: BT CLR ALL
+  l: [fun]
